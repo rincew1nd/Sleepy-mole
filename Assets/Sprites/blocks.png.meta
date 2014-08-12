@@ -1,0 +1,422 @@
+fileFormatVersion: 2
+guid: e800f127a3712cb4888a89691d5eccdf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: blocks
+    21300002: wood
+    21300004: dirt_01
+    21300006: dirt3
+    21300008: dirt_04
+    21300010: grass_01
+    21300012: stone_01
+    21300014: stone_04
+    21300016: stone_05
+    21300018: pipe
+    21300020: metal_02
+    21300022: neft
+    21300024: wood_box
+    21300026: dirt_02
+    21300028: dirt_03
+    21300030: blocks_15
+    21300032: grass_02
+    21300034: stone_02
+    21300036: stone_03
+    21300038: stone_06
+    21300040: metal-stone
+    21300042: metal-wood
+    21300044: hazard
+    21300046: wood_grass
+    21300048: dirt_05
+    21300050: dirt_06
+    21300052: blocks_27
+    21300054: grass_stone
+    21300056: metal_grass
+    21300058: stone-wood
+    21300060: metal_01
+    21300062: sand-water
+    21300064: water
+    21300066: door_01
+    21300068: door_02
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: wood
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dirt_01
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dirt3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dirt_04
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_01
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_01
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_04
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_05
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pipe
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: metal_02
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: neft
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 162
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wood_box
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 128
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dirt_02
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 128
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dirt_03
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blocks_15
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 128
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_02
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 128
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_02
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 128
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_03
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 128
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone_06
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 128
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: metal-stone
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 128
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: metal-wood
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 128
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: hazard
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 128
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: wood_grass
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 94
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dirt_05
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 94
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: dirt_06
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 94
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blocks_27
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 94
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: grass_stone
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 94
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: metal_grass
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 94
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: stone-wood
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 94
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: metal_01
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 94
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: sand-water
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 94
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: water
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 94
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_01
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 31
+        width: 35
+        height: 50
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: door_02
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 31
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

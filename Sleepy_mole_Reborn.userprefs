@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Menu_start_button.cs">
+    <Files>
+      <File FileName="Assets\Scripts\Menu_parallax.cs" Line="14" Column="50" />
+      <File FileName="Assets\Scripts\Menu_start_button.cs" Line="19" Column="28" />
+      <File FileName="Assets\Scripts\character_controller.cs" Line="70" Column="27" />
+      <File FileName="Assets\Scripts\isGrounded.cs" Line="10" Column="62" />
+      <File FileName="Assets\Scripts\canMoveSide.cs" Line="17" Column="28" />
+      <File FileName="Assets\Scripts\hand_for_breaking.cs" Line="35" Column="88" />
+      <File FileName="Assets\Scripts\block_logic.cs" Line="10" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

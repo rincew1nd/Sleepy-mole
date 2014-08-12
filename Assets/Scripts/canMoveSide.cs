@@ -34,4 +34,13 @@ public class canMoveSide : MonoBehaviour {
 		}
 		CharCon.MoveVector.x = (CharCon.facingRight) ? 0.03f : -0.03f;
 	}
+
+	void OnTriggerEnter2D (Collider2D other)
+	{
+		if (side == "left") {
+			CharCon.transform.position += new Vector3(0.01f,0,0);
+		} else if (side == "right"){
+			CharCon.transform.position += new Vector3(-0.01f,0,0);
+		}
+	}
 }

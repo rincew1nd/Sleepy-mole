@@ -14,7 +14,6 @@ public class character_controller : MonoBehaviour {
 	private bool isWalkingSoundPlaying = false;
 	
 	public Vector3 MoveVector;
-	private float MoveVector_notGrounded;
 	private Quaternion FacingVector;
 
 	public Vector2 jumpForce = new Vector2(0, 300);
@@ -22,26 +21,27 @@ public class character_controller : MonoBehaviour {
 	void Update () {
 		checkMovement();
 		checkFacing();
-		if (!isGrounded)
-		{
-			if (MoveVector.x != 0 && (!canMoveLeft || !canMoveRight)) {
-				MoveVector_notGrounded = MoveVector.x;
-				MoveVector.x = 0;
-				isJumpMoveStoped = true;
-			} else if (isJumpMoveStoped){
-				MoveVector.x = MoveVector_notGrounded;
-				isJumpMoveStoped = false;
-			}
-		}
+		playSound ();
 	}
 	
 	void checkMovement() {
 		if (Input.GetKeyDown(KeyCode.Space)) jump();
-		if (Input.GetAxis("Horizontal") < -0.01 || Input.GetAxis("Horizontal") > 0.01) move();
+		if ((Input.GetAxis("Horizontal") < -0.01 || Input.GetAxis("Horizontal") > 0.01) && isGrounded) move();
+
+		if (!isGrounded)
+		{
+			if (jumpForce.x != 0 && (!canMoveLeft || !canMoveRight)) {
+				isJumpMoveStoped = true;
+			} else if (isJumpMoveStoped){
+				isJumpMoveStoped = false;
+				rigidbody2D.AddForce(new Vector2(0.5f, 0f));
+			}
+		}
 	}
 	
 	void move() {
 		if (isGrounded) {
+			// Перемещение персонажа вправо-влево
 			if (Input.GetAxis ("Horizontal") > 0.01 && canMoveRight) {
 				MoveVector.x = Input.GetAxis ("Horizontal") * MoveSpeed;
 			} else if (Input.GetAxis ("Horizontal") < 0.01 && canMoveLeft) {
@@ -49,9 +49,33 @@ public class character_controller : MonoBehaviour {
 			} else {
 				MoveVector.x = 0;
 			}
+
+			// Направление спрайта персонажа
 			if (Input.GetAxis ("Horizontal") > 0.005) facingRight = true;
 			if (Input.GetAxis ("Horizontal") < -0.005) facingRight = false;
+		}
+		transform.position += MoveVector;
+	}
+	
+	void jump() {
+		if(isGrounded && canJump) {
+			rigidbody2D.velocity = Vector2.zero;
+			jumpForce.x = (facingRight) ? 150:-150;
+			rigidbody2D.AddForce(jumpForce);
+			isGrounded = false;
+		} else if (!isGrounded && canJump) {
+			jumpForce.x = 0;
+		}
+	}
+	
+	void checkFacing() {
+		FacingVector.y = (facingRight) ? 0 : 180;
+		transform.rotation = FacingVector;
+	}
 
+	void playSound() {
+		if (isGrounded) {
+			// Проигрывание звуков
 			if ((Input.GetAxis ("Horizontal") > 0.005 ||  Input.GetAxis ("Horizontal") < -0.005) && !isWalkingSoundPlaying)
 			{
 				isWalkingSoundPlaying = true;
@@ -61,21 +85,6 @@ public class character_controller : MonoBehaviour {
 				isWalkingSoundPlaying = false;
 				audio.Stop();
 			}
-		}
-		if (!isGrounded) audio.Stop ();
-		transform.position += MoveVector;
-	}
-	
-	void jump() {
-		if(isGrounded && canJump) {
-			rigidbody2D.velocity = Vector2.zero;
-			rigidbody2D.AddForce(jumpForce);
-			isGrounded = false;
-		}
-	}
-	
-	void checkFacing() {
-		FacingVector.y = (facingRight) ? 0 : 180;
-		transform.rotation = FacingVector;
+		} else audio.Stop ();
 	}
 }

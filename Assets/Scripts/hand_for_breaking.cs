@@ -23,15 +23,17 @@ public class hand_for_breaking : MonoBehaviour {
 		if (Input.GetAxis ("Vertical") <= 0.001 && Input.GetAxis ("Vertical") >= -0.001)
 		{
 			side = (CharCon.facingRight) ? 4 : 3;
-			handPosition.x += (CharCon.facingRight) ? 0.7f : -0.7f;
+			handPosition.x += 0.7f;
 		}
 
 		transform.position = handPosition;
-		if (Input.GetKey(KeyCode.B)) audio.Play ();
+		if (Input.GetKey(KeyCode.B) && !audio.isPlaying) audio.Play();
+		if (!Input.GetKey(KeyCode.B) && audio.isPlaying) audio.Stop();
 	}
 
 	void OnTriggerStay2D (Collider2D collider)
 	{
-		if (Input.GetKey(KeyCode.B)) collider.gameObject.GetComponent<block_logic>().hp -= 1;
+		if (Input.GetKey(KeyCode.B) && collider.gameObject.GetComponent<block_logic>().isBreakable)
+			collider.gameObject.GetComponent<block_logic>().hp -= 1;
 	}
 }

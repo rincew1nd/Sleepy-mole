@@ -7,6 +7,7 @@ public class isGrounded : MonoBehaviour {
 	
 	void OnTriggerStay2D (Collider2D other)
 	{
-		if (CharCon.isGrounded == false) CharCon.isGrounded = true;
+			if (CharCon.isGrounded == false)
+				CharCon.isGrounded = true;
 	}
 }

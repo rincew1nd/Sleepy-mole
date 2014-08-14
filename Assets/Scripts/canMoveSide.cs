@@ -32,7 +32,6 @@ public class canMoveSide : MonoBehaviour {
 			if (CharCon.canMoveRight == false)
 				CharCon.canMoveRight = true;
 		}
-		CharCon.MoveVector.x = (CharCon.facingRight) ? 0.03f : -0.03f;
 	}
 
 	void OnTriggerEnter2D (Collider2D other)

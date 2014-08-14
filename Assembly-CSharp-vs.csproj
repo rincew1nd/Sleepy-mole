@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\character_controller.cs" />
      <Compile Include="Assets\Scripts\hand_for_breaking.cs" />
      <Compile Include="Assets\Scripts\isGrounded.cs" />
+     <Compile Include="Assets\Scripts\level_doors.cs" />
      <Compile Include="Assets\Scripts\moving_platform.cs" />
      <Compile Include="Assets\Scripts\noise.cs" />
      <Compile Include="Assets\Scripts\old_scripts\ActionScript.cs" />
@@ -72,11 +73,11 @@
      <Compile Include="Assets\Scripts\old_scripts\ScriptName.cs" />
      <Compile Include="Assets\Scripts\old_scripts\block_destruction.cs" />
      <Compile Include="Assets\Scripts\old_scripts\block_info.cs" />
+     <Compile Include="Assets\Scripts\old_scripts\character_controller_old.cs" />
      <Compile Include="Assets\Scripts\old_scripts\hand_position.cs" />
      <Compile Include="Assets\Scripts\old_scripts\herocontroller.cs" />
      <Compile Include="Assets\Scripts\old_scripts\level_generation.cs" />
      <Compile Include="Assets\Scripts\old_scripts\movingplatform.cs" />
-     <Compile Include="Assets\Scripts\old_scripts\restart.cs" />
      <Compile Include="Assets\Scripts\old_scripts\rotating_aim.cs" />
      <Compile Include="Assets\Scripts\scene_logic.cs" />
      <None Include="Assets\Levels\level1.txt" />
